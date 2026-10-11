@@ -9,3 +9,8 @@ R-07,Σ6,Λειτουργική Καταλληλότητα,Μέτρια,Δυνα
 R-08,Σ10,Ασφάλεια,Μέτρια,Security testing / Vulnerability scanning,TBD,TBD,Open
 R-09,Σ3,Λειτουργική Καταλληλότητα,Μέτρια,Έλεγχος οριακών τιμών,TBD,TBD,Open
 R-10,Σ12,Λειτουργικότητα,Χαμηλή,Αποδοχή κινδύνου,TBD,TBD,Open
+R-11,NFR-01,Performance,Κρίσιμη,Load Test,-,TBD,Open
+R-03,FR-06,Functional suitability,Μέτρια,Test,checkin.feature,TBD,Open
+R-07,FR-07,Functional suitability,Μέτρια,Test,bans.feature,TBD,Open
+-,FR-09,Functional suitability,Must,Demonstration,-,TBD,Open
+R-02,-,Reliability,Υψηλή,-,-,-,Missing Req
