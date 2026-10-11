@@ -1,0 +1,11 @@
+risk_id,req_id,characteristic,priority,verification,acceptance,planned_tests,status
+R-01,Σ9,Απόδοση,Κρίσιμη,Δοκιμές φόρτου,TBD,TBD,Open
+R-02,Υ1,Αξιοπιστία,Υψηλή,Static analysis / Concurrency testing,TBD,TBD,Open
+R-03,Σ5,Λειτουργική Καταλληλότητα,Μέτρια,Review αρχιτεκτονικής (Ορισμός UTC),TBD,TBD,Open
+R-04,Σ5/Υ4,Ασφάλεια,Υψηλή,Δυναμικά QR codes (ανανέωση 30s),TBD,TBD,Open
+R-05,Σ11,Διαθεσιμότητα,Υψηλή,Μηχανισμός Grace period,TBD,TBD,Open
+R-06,Σ9,Χρηστικότητα,Υψηλή,Usability / UI testing,TBD,TBD,Open
+R-07,Σ6,Λειτουργική Καταλληλότητα,Μέτρια,Δυνατότητα χειροκίνητου check-in,TBD,TBD,Open
+R-08,Σ10,Ασφάλεια,Μέτρια,Security testing / Vulnerability scanning,TBD,TBD,Open
+R-09,Σ3,Λειτουργική Καταλληλότητα,Μέτρια,Έλεγχος οριακών τιμών,TBD,TBD,Open
+R-10,Σ12,Λειτουργικότητα,Χαμηλή,Αποδοχή κινδύνου,TBD,TBD,Open
