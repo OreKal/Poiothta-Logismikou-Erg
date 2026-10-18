@@ -1,16 +1,15 @@
 risk_id,req_id,characteristic,priority,verification,acceptance,planned_tests,status
-R-01,Σ9,Απόδοση,Κρίσιμη,Δοκιμές φόρτου,TBD,TBD,Open
-R-02,Υ1,Αξιοπιστία,Υψηλή,Static analysis / Concurrency testing,TBD,TBD,Open
-R-03,Σ5,Λειτουργική Καταλληλότητα,Μέτρια,Review αρχιτεκτονικής (Ορισμός UTC),TBD,TBD,Open
-R-04,Σ5/Υ4,Ασφάλεια,Υψηλή,Δυναμικά QR codes (ανανέωση 30s),TBD,TBD,Open
-R-05,Σ11,Διαθεσιμότητα,Υψηλή,Μηχανισμός Grace period,TBD,TBD,Open
-R-06,Σ9,Χρηστικότητα,Υψηλή,Usability / UI testing,TBD,TBD,Open
-R-07,Σ6,Λειτουργική Καταλληλότητα,Μέτρια,Δυνατότητα χειροκίνητου check-in,TBD,TBD,Open
-R-08,Σ10,Ασφάλεια,Μέτρια,Security testing / Vulnerability scanning,TBD,TBD,Open
-R-09,Σ3,Λειτουργική Καταλληλότητα,Μέτρια,Έλεγχος οριακών τιμών,TBD,TBD,Open
-R-10,Σ12,Λειτουργικότητα,Χαμηλή,Αποδοχή κινδύνου,TBD,TBD,Open
-R-11,NFR-01,Performance,Κρίσιμη,Load Test,-,TBD,Open
-R-03,FR-06,Functional suitability,Μέτρια,Test,checkin.feature,TBD,Open
-R-07,FR-07,Functional suitability,Μέτρια,Test,bans.feature,TBD,Open
--,FR-09,Functional suitability,Must,Demonstration,-,TBD,Open
-R-02,-,Reliability,Υψηλή,-,-,-,Missing Req
+R-01,NFR-01,Performance efficiency,Κρίσιμη,Δοκιμές φόρτου,TBD,TBD,Open
+R-02,Υ1,Reliability,Υψηλή,Static analysis / Concurrency testing,TBD,TBD,Open
+R-03,FR-06,Functional suitability,Μέτρια,Review αρχιτεκτονικής,checkin.feature,TBD,Open
+R-04,NFR-06,Security,Υψηλή,Δυναμικά QR codes (ανανέωση 30s),TBD,TBD,Open
+R-05,NFR-05,Reliability,Υψηλή,Μηχανισμός Grace period,TBD,TBD,Open
+R-06,NFR-07,Interaction capability,Υψηλή,Usability / UI testing,TBD,TBD,Open
+R-07,FR-08,Functional suitability,Μέτρια,Δυνατότητα χειροκίνητου check-in,checkin.feature,TBD,Open
+R-08,FR-13,Security,Μέτρια,Security testing / 6m deletion,TBD,TBD,Open
+R-11,NFR-01,Performance efficiency,Κρίσιμη,Load Test,-,TBD,Open
+R-13,FR-05,Functional suitability,Μέτρια,Review,group.feature,TBD,Open
+R-14,FR-12,Security,Κρίσιμη,SAST / RBAC Audit,TBD,TBD,Open
+R-15,NFR-08,Interaction capability,Υψηλή,WCAG Automations (Axe),TBD,TBD,Open
+R-16,NFR-10,Security,Υψηλή,Log Auditing,TBD,TBD,Open
+R-17,FR-16,Compatibility,Μέτρια,API Mocking / Admin sync,TBD,TBD,Open
