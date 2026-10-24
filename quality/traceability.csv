@@ -1,15 +1,35 @@
 risk_id,req_id,characteristic,priority,verification,acceptance,planned_tests,status
-R-01,NFR-01,Performance efficiency,Κρίσιμη,Δοκιμές φόρτου,TBD,TBD,Open
-R-02,Υ1,Reliability,Υψηλή,Static analysis / Concurrency testing,TBD,TBD,Open
-R-03,FR-06,Functional suitability,Μέτρια,Review αρχιτεκτονικής,checkin.feature,TBD,Open
-R-04,NFR-06,Security,Υψηλή,Δυναμικά QR codes (ανανέωση 30s),TBD,TBD,Open
-R-05,NFR-05,Reliability,Υψηλή,Μηχανισμός Grace period,TBD,TBD,Open
-R-06,NFR-07,Interaction capability,Υψηλή,Usability / UI testing,TBD,TBD,Open
-R-07,FR-08,Functional suitability,Μέτρια,Δυνατότητα χειροκίνητου check-in,checkin.feature,TBD,Open
-R-08,FR-13,Security,Μέτρια,Security testing / 6m deletion,TBD,TBD,Open
-R-11,NFR-01,Performance efficiency,Κρίσιμη,Load Test,-,TBD,Open
-R-13,FR-05,Functional suitability,Μέτρια,Review,group.feature,TBD,Open
-R-14,FR-12,Security,Κρίσιμη,SAST / RBAC Audit,TBD,TBD,Open
-R-15,NFR-08,Interaction capability,Υψηλή,WCAG Automations (Axe),TBD,TBD,Open
-R-16,NFR-10,Security,Υψηλή,Log Auditing,TBD,TBD,Open
-R-17,FR-16,Compatibility,Μέτρια,API Mocking / Admin sync,TBD,TBD,Open
+R-01,NFR-01,Performance efficiency,Κρίσιμη,Load test,N/A,PT-01: 400 χρήστες σε 5 λεπτά με p95 και ποσοστό σφαλμάτων,planned
+R-02,FR-16,Reliability,Υψηλή,Concurrency test,other_requirements.feature,IT-01: ταυτόχρονη δέσμευση ίδιας αίθουσας και ώρας,planned
+R-03,FR-06,Functional suitability,Μέτρια,Boundary test,checkin.feature,AT-06: έλεγχος 10:15:00 και 10:15:01,planned
+-,FR-06,Functional suitability,Must,Boundary test,bans.feature,AT-06B: ακύρωση λιγότερο από 60 λεπτά πριν,planned
+R-03,NFR-04,Maintainability,Μέτρια,Static analysis,N/A,ST-04: εντοπισμός απευθείας κλήσεων στο ρολόι συστήματος,planned
+R-04,NFR-06,Security,Υψηλή,Security test,N/A,ST-06: λήξη QR token στο όριο των 30 δευτερολέπτων,planned
+R-05,FR-10,Reliability,Υψηλή,Integration test,other_requirements.feature,IT-10: SSO εκτός λειτουργίας με ενεργή συνεδρία,planned
+R-05,NFR-05,Reliability,Υψηλή,Integration test,other_requirements.feature,IT-05: διατήρηση όλων των ενεργών sessions σε συντήρηση SSO,planned
+R-06,NFR-03,Performance efficiency,Υψηλή,Performance test,N/A,PT-03: χρόνος check-in σε αντιπροσωπευτικό κινητό και δίκτυο,planned
+R-06,NFR-07,Interaction capability,Υψηλή,Mobile usability test,N/A,UT-07: εκτέλεση βασικών ροών από κινητό χωρίς εφαρμογή,planned
+R-07,FR-08,Functional suitability,Μέτρια,Acceptance test,checkin.feature,AT-08: χειροκίνητο check-in εντός 15 λεπτών,planned
+R-08,NFR-12,Security,Μέτρια,Security test,N/A,ST-12S: κρυπτογράφηση δεδομένων κατά τη μεταφορά/αποθήκευση και έλεγχος ρυθμίσεων,planned
+-,FR-13,Security,Must,Data-retention test,other_requirements.feature,ST-13: ανωνυμοποίηση στη συμπλήρωση εξαμήνου,planned
+-,NFR-02,Security,Must,Data-retention test,N/A,ST-02: διαγραφή αναγνωριστικών και διατήρηση ανώνυμων στοιχείων,planned
+R-09,FR-02,Functional suitability,Μέτρια,Boundary test,daily_limit.feature,AT-02: όριο 3 ωρών στην εξεταστική,planned
+R-09,FR-03,Functional suitability,Μέτρια,Boundary test,daily_limit.feature,AT-03: όριο 2 ωρών εκτός εξεταστικής,planned
+R-10,FR-19,Reliability,Χαμηλή,Email-adapter test,other_requirements.feature,IT-19: αποστολή υπενθύμισης πριν από την κράτηση,planned
+R-10,FR-20,Compatibility,Χαμηλή,SSO-adapter test,other_requirements.feature,IT-20: χρήση τρέχοντος email και συμπεριφορά χωρίς email,planned
+R-11,NFR-01,Performance efficiency,Συγχωνευμένος με R-01,Load test,N/A,PT-01: παρακολούθηση μέσω R-01· παλαιό ID για συμβατότητα,merged
+R-13,FR-18,Functional suitability,Υψηλή,Boundary test,other_requirements.feature,AT-18: όρια μελών 2/3/6/7 και διπλή δήλωση μέλους,planned
+R-14,FR-12,Security,Υψηλή,Authorization test,other_requirements.feature,ST-12: έλεγχος UI/API/export/reports για ρόλο βιβλιοθήκης,planned
+R-14,FR-11,Security,Υψηλή,Authorization test,other_requirements.feature,ST-11: έλεγχος δικαιούχου χωρίς έκθεση της λίστας,planned
+R-15,NFR-08,Interaction capability,Υψηλή,Accessibility audit,N/A,AT-08A: WCAG 2.1 AA με αυτοματοποιημένο και χειροκίνητο έλεγχο,planned
+R-16,NFR-10,Security,Υψηλή,Log audit,N/A,ST-10: πρόσβαση IT και απουσία κωδικών/μη αναγκαίων προσωπικών δεδομένων,planned
+R-17,FR-17,Compatibility,Μέτρια,Integration and data-quality test,other_requirements.feature,IT-17: επιτυχής και αποτυχημένη ημερήσια εισαγωγή ημερολογίου,planned
+-,FR-01,Functional suitability,Must,Acceptance test,other_requirements.feature,AT-01: άνοιγμα επόμενης εβδομάδας Δευτέρα 08:00,planned
+-,FR-04,Functional suitability,Must,Boundary test,bans.feature,AT-04: ακύρωση τουλάχιστον 60 λεπτά πριν,planned
+-,FR-05,Functional suitability,Must,Acceptance test,group_booking_feature.feature,AT-05: ημερήσιο όριο μόνο δημιουργού και check-in μέλους,planned
+-,FR-07,Functional suitability,Must,Boundary test,bans.feature,AT-07: τρίτη χαμένη κράτηση και κυλιόμενο παράθυρο 30 ημερών,planned
+-,FR-09,Functional suitability,Should,Inspection and demonstration,N/A,AT-09: αναφορά πληρότητας ανά αίθουσα και ώρα,planned
+-,FR-14,Interaction capability,Must,Acceptance test,other_requirements.feature,AT-14: εναλλαγή ελληνικών και αγγλικών,planned
+-,FR-15,Functional suitability,Must,Authorization and validation test,other_requirements.feature,AT-15: μη εξουσιοδοτημένη και έγκυρη αλλαγή ωραρίου,planned
+-,NFR-09,Reliability,Must,Operational simulation,N/A,IT-09: επανεκκίνηση VM δεύτερη Τρίτη 07:00–07:30,planned
+-,NFR-11,Maintainability,Should,Documentation review,N/A,REV-11: εκτέλεση οδηγιών εγκατάστασης και διάγνωσης από IT,planned
