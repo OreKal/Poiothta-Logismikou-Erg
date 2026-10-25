@@ -5,8 +5,8 @@ R-03,FR-06,Functional suitability,Μέτρια,Boundary test,checkin.feature,AT-
 -,FR-06,Functional suitability,Must,Boundary test,bans.feature,AT-06B: ακύρωση λιγότερο από 60 λεπτά πριν,planned
 R-03,NFR-04,Maintainability,Μέτρια,Static analysis,N/A,ST-04: εντοπισμός απευθείας κλήσεων στο ρολόι συστήματος,planned
 R-04,NFR-06,Security,Υψηλή,Security test,N/A,ST-06: λήξη QR token στο όριο των 30 δευτερολέπτων,planned
-R-05,FR-10,Reliability,Υψηλή,Integration test,other_requirements.feature,IT-10: SSO εκτός λειτουργίας με ενεργή συνεδρία,planned
-R-05,NFR-05,Reliability,Υψηλή,Integration test,other_requirements.feature,IT-05: διατήρηση όλων των ενεργών sessions σε συντήρηση SSO,planned
+R-05,FR-10,Reliability,Υψηλή,Integration test,other_requirements.feature,IT-10: κατά τη συντήρηση SSO αποκλείονται login/κρατήσεις/ακυρώσεις και διατηρούνται οι υπάρχουσες κρατήσεις,planned
+R-05,NFR-05,Reliability,Υψηλή,Integration test,other_requirements.feature,IT-05: διατήρηση όλων των υπαρχουσών κρατήσεων σε συντήρηση SSO,planned
 R-06,NFR-03,Performance efficiency,Υψηλή,Performance test,N/A,PT-03: χρόνος check-in σε αντιπροσωπευτικό κινητό και δίκτυο,planned
 R-06,NFR-07,Interaction capability,Υψηλή,Mobile usability test,N/A,UT-07: εκτέλεση βασικών ροών από κινητό χωρίς εφαρμογή,planned
 R-07,FR-08,Functional suitability,Μέτρια,Acceptance test,checkin.feature,AT-08: χειροκίνητο check-in εντός 15 λεπτών,planned
@@ -15,7 +15,7 @@ R-08,NFR-12,Security,Μέτρια,Security test,N/A,ST-12S: κρυπτογράφ
 -,NFR-02,Security,Must,Data-retention test,N/A,ST-02: διαγραφή αναγνωριστικών και διατήρηση ανώνυμων στοιχείων,planned
 R-09,FR-02,Functional suitability,Μέτρια,Boundary test,daily_limit.feature,AT-02: όριο 3 ωρών στην εξεταστική,planned
 R-09,FR-03,Functional suitability,Μέτρια,Boundary test,daily_limit.feature,AT-03: όριο 2 ωρών εκτός εξεταστικής,planned
-R-10,FR-19,Reliability,Χαμηλή,Email-adapter test,other_requirements.feature,IT-19: αποστολή υπενθύμισης πριν από την κράτηση,planned
+R-10,FR-19,Reliability,Χαμηλή,Email-adapter test,other_requirements.feature,IT-19: προαιρετική υπενθύμιση περίπου μία ώρα πριν από την κράτηση,planned
 R-10,FR-20,Compatibility,Χαμηλή,SSO-adapter test,other_requirements.feature,IT-20: χρήση τρέχοντος email και συμπεριφορά χωρίς email,planned
 R-11,NFR-01,Performance efficiency,Συγχωνευμένος με R-01,Load test,N/A,PT-01: παρακολούθηση μέσω R-01· παλαιό ID για συμβατότητα,merged
 R-13,FR-18,Functional suitability,Υψηλή,Boundary test,other_requirements.feature,AT-18: όρια μελών 2/3/6/7 και διπλή δήλωση μέλους,planned
@@ -27,9 +27,13 @@ R-17,FR-17,Compatibility,Μέτρια,Integration and data-quality test,other_re
 -,FR-01,Functional suitability,Must,Acceptance test,other_requirements.feature,AT-01: άνοιγμα επόμενης εβδομάδας Δευτέρα 08:00,planned
 -,FR-04,Functional suitability,Must,Boundary test,bans.feature,AT-04: ακύρωση τουλάχιστον 60 λεπτά πριν,planned
 -,FR-05,Functional suitability,Must,Acceptance test,group_booking_feature.feature,AT-05: ημερήσιο όριο μόνο δημιουργού και check-in μέλους,planned
--,FR-07,Functional suitability,Must,Boundary test,bans.feature,AT-07: τρίτη χαμένη κράτηση και κυλιόμενο παράθυρο 30 ημερών,planned
+-,FR-07,Functional suitability,Must,Boundary test,bans.feature,AT-07: τρίτη χαμένη κράτηση σε κυλιόμενο παράθυρο 30x24 ωρών και αποκλεισμός 168 ωρών,planned
 -,FR-09,Functional suitability,Should,Inspection and demonstration,N/A,AT-09: αναφορά πληρότητας ανά αίθουσα και ώρα,planned
 -,FR-14,Interaction capability,Must,Acceptance test,other_requirements.feature,AT-14: εναλλαγή ελληνικών και αγγλικών,planned
 -,FR-15,Functional suitability,Must,Authorization and validation test,other_requirements.feature,AT-15: μη εξουσιοδοτημένη και έγκυρη αλλαγή ωραρίου,planned
 -,NFR-09,Reliability,Must,Operational simulation,N/A,IT-09: επανεκκίνηση VM δεύτερη Τρίτη 07:00–07:30,planned
 -,NFR-11,Maintainability,Should,Documentation review,N/A,REV-11: εκτέλεση οδηγιών εγκατάστασης και διάγνωσης από IT,planned
+-,FR-01,Functional suitability,Must,Boundary test,other_requirements.feature,AT-01B: κράτηση Σαββάτου 12 ημέρες πριν μετά το άνοιγμα Δευτέρα 08:00,planned
+-,FR-03,Functional suitability,Must,Boundary test,daily_limit.feature,AT-03B: δύο μη επικαλυπτόμενες κρατήσεις μίας ώρας εντός ημερήσιου ορίου,planned
+-,FR-04,Functional suitability,Must,Integration and boundary test,bans.feature,AT-04B: διακοπή SSO που τέμνει το τελευταίο 60λεπτο εξαιρεί την ποινή,planned
+-,FR-08,Functional suitability,Must,Acceptance test,checkin.feature,AT-08B: χειροκίνητο check-in με ταυτότητα και πραγματική ώρα· audit log και ειδοποίηση επισκευής QR,planned
