@@ -35,5 +35,5 @@ R-17,FR-17,Compatibility,Μέτρια,Integration and data-quality test,other_re
 -,NFR-11,Maintainability,Should,Documentation review,N/A,REV-11: εκτέλεση οδηγιών εγκατάστασης και διάγνωσης από IT,planned
 -,FR-01,Functional suitability,Must,Boundary test,other_requirements.feature,AT-01B: κράτηση Σαββάτου 12 ημέρες πριν μετά το άνοιγμα Δευτέρα 08:00,planned
 -,FR-03,Functional suitability,Must,Boundary test,daily_limit.feature,AT-03B: δύο μη επικαλυπτόμενες κρατήσεις μίας ώρας εντός ημερήσιου ορίου,planned
--,FR-04,Functional suitability,Must,Integration and boundary test,bans.feature,AT-04B: διακοπή SSO που τέμνει το τελευταίο 60λεπτο εξαιρεί την ποινή,planned
+-,FR-04,Functional suitability,Must,Integration and boundary test,bans.feature,AT-04B: τεκμηριωμένη διακοπή SSO εμπόδισε ακύρωση και εξαιρεί την ποινή,planned
 -,FR-08,Functional suitability,Must,Acceptance test,checkin.feature,AT-08B: χειροκίνητο check-in με ταυτότητα και πραγματική ώρα· audit log και ειδοποίηση επισκευής QR,planned
