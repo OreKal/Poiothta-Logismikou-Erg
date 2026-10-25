@@ -37,3 +37,4 @@ R-17,FR-17,Compatibility,Μέτρια,Integration and data-quality test,other_re
 -,FR-03,Functional suitability,Must,Boundary test,daily_limit.feature,AT-03B: δύο μη επικαλυπτόμενες κρατήσεις μίας ώρας εντός ημερήσιου ορίου,planned
 -,FR-04,Functional suitability,Must,Integration and boundary test,bans.feature,AT-04B: τεκμηριωμένη διακοπή SSO εμπόδισε ακύρωση και εξαιρεί την ποινή,planned
 -,FR-08,Functional suitability,Must,Acceptance test,checkin.feature,AT-08B: χειροκίνητο check-in με ταυτότητα και πραγματική ώρα· audit log και ειδοποίηση επισκευής QR,planned
+R-18,NFR-13,Maintainability,Should,Static analysis,N/A,ST-13: radon CC ανά συνάρτηση; goal ≤10 και fail αν οποιαδήποτε τιμή >10,planned
