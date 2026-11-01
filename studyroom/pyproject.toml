@@ -33,7 +33,10 @@ source = ["studyroom"]
 line-length = 100
 
 [tool.ruff.lint]
-select = ["E", "F", "B", "C90", "PLR", "SIM", "DTZ"]
+select = ["E", "F", "B", "C90", "PLR", "SIM", "DTZ", "S", "BLE"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 10
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
