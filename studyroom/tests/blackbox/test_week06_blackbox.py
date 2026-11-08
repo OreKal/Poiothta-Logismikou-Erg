@@ -86,8 +86,20 @@ def test_TC_BB_56_booking_beyond_block_remains_active():
 
 
 ACCESS_CASES = [
-    ("TC-BB-19", moment(5, 23, 59, 59), moment(9, 8), "1004", False),
-    ("TC-BB-20", moment(6, 0), moment(9, 8), "1004", True),
+    (
+        "TC-BB-19",
+        datetime(2026, 10, 29, 23, 59, 59),
+        datetime(2026, 11, 9, 8),
+        "1004",
+        False,
+    ),
+    (
+        "TC-BB-20",
+        datetime(2026, 10, 30, 0),
+        datetime(2026, 11, 9, 8),
+        "1004",
+        True,
+    ),
     ("TC-BB-21", moment(3, 10), moment(7, 10), "1001", True),
 ]
 

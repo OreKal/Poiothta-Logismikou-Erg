@@ -42,3 +42,16 @@ R-13,FR-18,Functional suitability,Υψηλή,Group-member validation test,other_
 R-19,NFR-10,Security,Υψηλή,Static source check,N/A,ST-10B: καμία κλήση logger δεν περιλαμβάνει email φοιτητή,planned
 R-20,FR-08,Security (Integrity),Υψηλή,Authorization and boundary test,checkin.feature,AT-08C: μη υπάλληλος δεν μπορεί να κάνει check-in πάγκου και ο χρόνος δεν δέχεται backdating,planned
 R-20,FR-15,Security (Integrity),Υψηλή,Authorization test,other_requirements.feature,ST-15B: desk_checkin απορρίπτει αιτήματα χωρίς εξουσιοδότηση υπαλλήλου,planned
+-,FR-01,Functional suitability,Must,Boundary test,other_requirements.feature,TC-BB-01–18: PASS,executed: 18 PASS
+-,FR-02,Functional suitability,Must,Decision table,daily_limit.feature,TC-BB-24: PASS,executed: 1 PASS
+R-09,FR-03,Functional suitability,Μέτρια,Boundary test,daily_limit.feature,TC-BB-22–25: PASS; TC-BB-26: FAIL; TC-BB-29: PASS,executed: 5 PASS 1 FAIL
+-,FR-04,Functional suitability,Must,State transition test,bans.feature,TC-BB-46: FAIL; TC-BB-47–50: PASS; TC-BB-57–63: PASS; TC-BB-65: PASS; TC-BB-74: PASS,executed: 13 PASS 1 FAIL
+-,FR-05,Functional suitability,Must,Authorization test,group_booking_feature.feature,TC-BB-43–44: PASS,executed: 2 PASS
+R-03,FR-06,Functional suitability,Μέτρια,Boundary and transition test,checkin.feature,TC-BB-39–40: PASS; TC-BB-41: FAIL; TC-BB-42: PASS; TC-BB-51–52: PASS; TC-BB-64: PASS; TC-BB-65: PASS,executed: 7 PASS 1 FAIL
+-,FR-07,Functional suitability,Must,Boundary and transition test,bans.feature,TC-BB-27: PASS; TC-BB-53–54: PASS; TC-BB-55: FAIL; TC-BB-56: PASS; TC-BB-62–63: PASS; TC-BB-73: PASS,executed: 7 PASS 1 FAIL
+R-20,FR-08,Security (Integrity),Υψηλή,Authorization and boundary test,checkin.feature,TC-BB-39–40: PASS; TC-BB-41: FAIL; TC-BB-42–44: PASS; TC-BB-45: FAIL; TC-BB-71: FAIL; TC-BB-72: PASS; TC-BB-75: PASS,executed: 7 PASS 3 FAIL
+-,FR-11,Functional suitability,Must,Boundary test,other_requirements.feature,TC-BB-19–21: PASS; TC-BB-66: PASS,executed: 4 PASS
+R-20,FR-15,Security (Integrity),Υψηλή,Authorization test,other_requirements.feature,TC-BB-71: FAIL; TC-BB-72: PASS,executed: 1 PASS 1 FAIL
+R-02,FR-16,Reliability,Υψηλή,Conflict test,other_requirements.feature,TC-BB-36–38: PASS,executed: 3 PASS
+R-13,FR-18,Functional suitability,Υψηλή,Group-member validation test,other_requirements.feature,TC-BB-28: PASS; TC-BB-30–33: PASS; TC-BB-34–35: FAIL,executed: 5 PASS 2 FAIL
+-,ΚΡ13,Functional suitability,Must,Negative/API validation test,other_requirements.feature,TC-BB-67–70: PASS; TC-BB-74–75: PASS,executed: 6 PASS
