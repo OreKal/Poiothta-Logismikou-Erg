@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from datetime import date, datetime, timedelta
 
-from . import booking, penalties, reports, rules, store
+from . import booking, desk, penalties, reports, rules, store
 from .models import Room
 
 
@@ -37,11 +37,16 @@ def handle(request: dict) -> dict:
         elif action == "checkin":
             booking.check_in(request["booking"], user.id)
             return {"ok": True, "message": "Checked in" if lang == "en" else "Έγινε check-in"}
-        elif action == "staff_checkin":
-            if user.role != "staff":
-                return {"ok": False, "message": "Forbidden" if lang == "en" else "Δεν επιτρέπεται"}
-            booking.check_in(request["booking"], user.id, by_staff=True)
-            return {"ok": True, "message": "Checked in by staff" if lang == "en" else "Check-in από υπάλληλο"}
+        elif action == "desk_checkin":
+            at = datetime.fromisoformat(request["at"]) if request.get("at") else None
+            desk.desk_check_in(request["booking"], user.id, request.get("reason", ""), at)
+            return {"ok": True, "message": "Checked in at the desk" if lang == "en" else "Check-in από τον πάγκο"}
+        elif action == "change_members":
+            members = request.get("members", [])
+            if isinstance(members, str):
+                members = [m.strip() for m in members.split(",") if m.strip()]
+            desk.change_members(request["booking"], user.id, members)
+            return {"ok": True, "message": "Members updated" if lang == "en" else "Τα μέλη ενημερώθηκαν"}
         elif action == "my_bookings":
             items = [
                 {"id": b.id, "room": b.room_code, "start": b.start.isoformat(), "hours": b.hours}

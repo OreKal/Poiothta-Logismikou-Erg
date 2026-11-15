@@ -47,6 +47,16 @@ def send_block_notice(student, cancelled):
     _send(student.email, subject, body)
 
 
+def send_members_changed(student, booking):
+    if student.lang == "en":
+        subject = "StudyRoom: group members changed"
+        body = f"Room {booking.room_code}, {booking.start:%d/%m %H:%M}: {', '.join(booking.members)}."
+    else:
+        subject = "StudyRoom: αλλαγή μελών ομάδας"
+        body = f"Αίθουσα {booking.room_code}, {booking.start:%d/%m %H:%M}: {', '.join(booking.members)}."
+    _send(student.email, subject, body)
+
+
 def send_reminders():
     """Υπενθύμιση μία ώρα πριν την έναρξη. Καλείται από cron κάθε 10 λεπτά."""
     now = datetime.now()

@@ -52,6 +52,7 @@ class Booking:
     status: str = ACTIVE
     checked_in_at: datetime | None = None
     checked_in_by: str | None = None
+    checkin_reason: str | None = None
     cancelled_at: datetime | None = None
 
     @property
