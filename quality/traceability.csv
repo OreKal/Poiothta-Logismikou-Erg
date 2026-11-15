@@ -55,3 +55,7 @@ R-20,FR-15,Security (Integrity),Υψηλή,Authorization test,other_requirements
 R-02,FR-16,Reliability,Υψηλή,Conflict test,other_requirements.feature,TC-BB-36–38: PASS,executed: 3 PASS
 R-13,FR-18,Functional suitability,Υψηλή,Group-member validation test,other_requirements.feature,TC-BB-28: PASS; TC-BB-30–33: PASS; TC-BB-34–35: FAIL,executed: 5 PASS 2 FAIL
 -,ΚΡ13,Functional suitability,Must,Negative/API validation test,other_requirements.feature,TC-BB-67–70: PASS; TC-BB-74–75: PASS,executed: 6 PASS
+R-07,FR-07,Functional suitability,Υψηλή,Structural and boundary test,N/A,TC-WB-01–11; TC-WB-24–29; TC-WB-32 (TC-WB-03 XFAIL INC-06),executed: 17 PASS 1 XFAIL
+R-21,FR-09,Functional suitability (Accuracy),Μέτρια,Structural and report test,N/A,TC-WB-12–15,executed: 4 PASS
+R-21,FR-22,Functional suitability (Accuracy),Μέτρια,Structural and report test,N/A,TC-WB-16–18; TC-WB-30; TC-WB-33,executed: 5 PASS
+R-09,FR-23,Functional suitability,Μέτρια,Structural and boundary test,N/A,TC-WB-19–23; TC-WB-31; TC-WB-34 (TC-WB-22 XFAIL INC-07),executed: 6 PASS 1 XFAIL

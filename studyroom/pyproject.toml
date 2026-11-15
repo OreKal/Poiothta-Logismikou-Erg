@@ -29,6 +29,11 @@ addopts = "-q"
 branch = true
 source = ["studyroom"]
 
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+precision = 1
+
 [tool.ruff]
 line-length = 100
 
@@ -39,7 +44,7 @@ select = ["E", "F", "B", "C90", "PLR", "SIM", "DTZ", "S", "BLE"]
 max-complexity = 10
 
 [tool.ruff.lint.per-file-ignores]
-"tests/*" = ["S101"]
+"tests/*" = ["S101", "DTZ001"]
 
 [tool.mypy]
 enable_error_code = ["possibly-undefined"]
